@@ -5,6 +5,11 @@ for (let i = 0; i < document.querySelectorAll(".drum").length; i++) {
   });
 }
 
+//Keyboard press
+document.addEventListener("keydown", function (event) {
+  switchSound(event.key);
+});
+
 function switchSound(e) {
   switch (e) {
     case "w":
